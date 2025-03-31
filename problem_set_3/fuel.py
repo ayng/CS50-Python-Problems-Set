@@ -31,7 +31,6 @@ Tips
 - raise: Throw an error if something is wrong
 """
 
-
 # Define a program
 def main():
     while True:
@@ -86,8 +85,6 @@ def main():
             print(f'Error: {e}')
 
 main()
-
-
 
 
 
