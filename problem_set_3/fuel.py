@@ -20,6 +20,7 @@ If, though, X or Y is not an integer, X is greater than Y, or Y is 0, instead pr
 
 # Use Control + C to enable/disable GitHub Copilot.
 # Use ^ + Command + I to enable/disable Copilot chat.
+# Control + Option + N to Run Code
 
 """
 Tips
@@ -85,24 +86,3 @@ def main():
             print(f'Error: {e}')
 
 main()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
