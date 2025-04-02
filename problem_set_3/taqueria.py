@@ -47,5 +47,12 @@ main()
 
 """
 Notes:
-To get a value from a dictionary, you use this syntax: dictionary[key]
+
+- To get a value from a dictionary, you use this syntax: dictionary[key]
+
+- EOFError: End Of File Error
+happens when the input stream is closed unexpectedly, or more commonly, 
+when the user explicitly signals the end of input by pressing Ctrl+D (on Unix/Linux/macOS) or Ctrl+Z (on Windows).
+In this context, it's an elegant way for the user to indicate they're finished ordering.
+Once detected, the loop immediately exits due to the break statement.
 """
