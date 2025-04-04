@@ -31,3 +31,5 @@ Then output that same date in YYYY-MM-DD format. If the user’s input is not a 
 
 # Chat GPT: What are the basic building blocks of typing in Python?
 # Tell me about method chaining (already asked and took screenshot)
+# Check out the following Git channels: https://github.com/karan/Projects https://github.com/dipakkr/A-to-Z-Resources-for-Students
+# See ChatGPT thread for more great channels to follow
