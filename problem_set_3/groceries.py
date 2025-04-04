@@ -23,11 +23,6 @@ def main():
             else:
                 empty_dict[item] += 1
                 print('This existing entry has been updated')
-            
-
-
-
-
 
         except EOFError:
             for key, value in sorted(empty_dict.items()):
