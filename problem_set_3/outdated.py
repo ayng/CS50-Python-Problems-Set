@@ -63,7 +63,9 @@ def main():
 
                 # Validate month input for path 1
                 if month.isnumeric():
-                    if len(month) == 2:
+                    if len(month) == 1:
+                        month = '0' + month
+                    elif len(month) == 2:
                         pass
                     else:
                         raise ValueError('Invalid month entry. Not enough characters. Please try again.')
@@ -72,10 +74,12 @@ def main():
                 
                 # Validate day input for path 1
                 if day.isnumeric():
-                    if len(day) == 2:
+                    if len(day) == 1:
+                        day = '0' + day
+                    elif len(day) == 2:
                         pass
                     else:
-                        raise ValueError('Invalid day entry. Not enough characters. Please try again.')
+                        raise ValueError('Invalid day entry. Too many characters. Please try again.')
                 else:
                     raise ValueError('Invalid day entry. Not numeric. Please try again.')
                 
