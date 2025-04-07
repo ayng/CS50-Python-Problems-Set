@@ -33,6 +33,6 @@ def main():
         except EOFError as e:
             print(f'\nYou exited the program.')
             break
-        
+
 main()
 
