@@ -1,13 +1,40 @@
 import random
 
+def main():
+    # Prompt the user for a level
+    level = get_level()
+    
+    # Initiate score
+    score = 0
 
-# def main():
-#     level = get_level()
-#     score = 0
+    # Generate 10 math problems
+    for _ in range(10):
+        x = generate_integer(level)
+        y = generate_integer(level)
 
-#     while tries < 3:
+        # Calculate the correct answer
+        correct_answer = x + y
 
+        # Initiate tries for each problem
+        tries = 0
 
+        # Prompt the user to solve each problem
+        while tries < 3:
+            try:
+                response = int(input(f'{x} + {y} = '))
+                if response == correct_answer:
+                    score += 1
+                else:
+                    print('EEE')
+                    tries += 1
+            except ValueError:
+                print('EEE')
+                tries += 1
+
+        if tries == 3:
+            print(f'The correct answer is: {correct_answer}')
+    
+    print(f'Score: {score}/10')
 
 # Prompt (re-prompt) the user for a level and return 1, 2, or 3
 def get_level():
@@ -31,6 +58,6 @@ def generate_integer(level):
     else:
         raise ValueError('Invalid level')
 
-#main()
+main()
 # if __name__ == "__main__":
 #     main()
