@@ -1,0 +1,27 @@
+# Standard libraries
+import os
+import re
+import time
+import ast
+import pandas as pd
+
+# NLP libraries
+from nltk.tokenize import word_tokenize, sent_tokenize
+from nltk.corpus import sentiwordnet as swn, wordnet
+from nltk.stem import WordNetLemmatizer
+from nltk import pos_tag
+
+# Utilities
+from itertools import combinations
+from collections import defaultdict, Counter
+
+# NLTK downloads (safe to re-run)
+import nltk
+nltk.download("punkt")
+nltk.download("sentiwordnet")
+nltk.download("wordnet")
+nltk.download("averaged_perceptron_tagger")
+
+# Show working directory
+current_directory = os.getcwd()
+print(f"Working from: {current_directory}")
